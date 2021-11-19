@@ -1,6 +1,8 @@
 # NodePractice
 Where I shame myself with horrible attempts at NodeJS coding :)
 
+Check the branches for the different projects.
+
 Most of the code here is going to be bad. Like unreadably bad and slow but it's fine because I am learning right :)
 
 Most of the files here are going to be fairly basic but I will eventually try something hard, like making a calculator 😐
