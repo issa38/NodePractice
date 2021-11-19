@@ -2,7 +2,7 @@
 !!SERVER IS NOT HOSTED!! 
 You have to run `nodemon app.js` in the terminal to host the server on port 3000. So the url is localhost:3000
 
-My first NodeJS Project. honestly I have no idea what I really spent the last week righting but it works somehow and it does what I needed it to do.
+My first NodeJS Project. honestly I have no idea what I really spent the last week writing but it works somehow and it does what I needed it to do.
 
 It is extremely basic and the most difficult thing I have done is reference a MongoDB database that houses the blogs and pulls the IDs for the blogs.
   and I still dont know how it really works just that someone wrote on StackOverflow that it works and they were right!
