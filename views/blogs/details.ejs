@@ -1,0 +1,39 @@
+<html lang="en">
+<%- include("../partials/head.ejs") %>
+
+    <body>
+        <%- include("../partials/nav.ejs") %>
+
+            <div class="details content">
+                <h2>
+                    <%= blog.title %>
+                </h2>
+                <div class="content">
+                    <p>
+                        <%= blog.body %>
+                    </p>
+                </div>
+                <!-- This data-doc attribute allows the use of assigning any value to that attribute. Assigns the id to the delete button -->
+                <a class="delete" data-doc="<%= blog._id %>"><img src="/trashcan.svg" alt="trash"></img>
+                </a>
+            </div>
+
+            <%- include("../partials/footer.ejs") %>
+
+                <script>
+                    const trashcan = document.querySelector('a.delete');
+
+                    trashcan.addEventListener('click', (e) => {
+                        const end = `/blogs/${trashcan.dataset.doc}`;
+
+                        fetch(end, {
+                                method: 'DELETE'
+                            })
+                            .then((response) => response.json())
+                            .then((data) => window.location.href = data.redirect)
+                            .catch(err => console.log(err));
+                    });
+                </script>
+    </body>
+
+</html>

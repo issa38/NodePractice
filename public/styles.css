@@ -1,0 +1,230 @@
+/* Used as a Static File. This is allowed for the browser to use this file from the backend. Typically it cant */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&family=Roboto+Slab&display=swap');
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: 'Roboto', serif;
+    max-width: 1200px;
+    background-color: rgba(87, 146, 41, 25%);
+}
+
+p,
+h1,
+h2,
+h3,
+a,
+ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #222;
+}
+
+
+/* nav & footer styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+nav h1 {
+    font-size: 3em;
+}
+
+nav p,
+nav a {
+    color: #777;
+    font-weight: 300;
+}
+
+nav a:hover {
+    color: #222;
+}
+
+footer {
+    color: #777;
+    text-align: center;
+    margin: 80px auto 20px;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+h3 {
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.content {
+    margin-left: 20px;
+    animation: fadeInUp 1s;
+}
+
+
+/* index styles */
+
+.blogs a {
+    display: block;
+    margin: 40px 0;
+    padding-left: 30px;
+    border-left: 6px solid dodgerblue;
+    animation: fadeInUp 1.5s;
+}
+
+.blogs a:hover h3 {
+    color: dodgerblue;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+
+/* details styles */
+
+.details {
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    padding: 8px;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* 
+.delete:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px #289FED;
+    box-shadow: 25px 25px 0px 0px #E1EEFF;
+    box-shadow: 20px 20px 0px 0px #CAE6FF;
+    box-shadow: 15px 15px 0px 0px #A1D8FF;
+    box-shadow: 10px 10px 0px 0px #5FB8FF;
+    box-shadow: 5px 5px 0px 0px #289FED;
+} */
+
+.delete:hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.delete:hover,
+.delete:focus,
+.delete:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* About page */
+
+ul {
+    margin-left: 0;
+    padding-left: 40px;
+}
+
+
+/* create styles */
+
+.create-blog form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.create-blog input,
+.create-blog textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.create-blog label {
+    display: block;
+    margin-top: 24px;
+}
+
+textarea {
+    height: 120px;
+}
+
+.create-blog button {
+    margin-top: 20px;
+    background: dodgerblue;
+    color: white;
+    padding: 6px;
+    border: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.create-blog button:hover,
+button:focus,
+button:active {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+
+/* .create-blog button::after {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+} */
