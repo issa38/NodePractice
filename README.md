@@ -1,7 +1,5 @@
-# NodePractice
-Where I shame myself with horrible attempts at NodeJS coding :)
+# Node JS Blogs
 
-#Node JS Blogs
 My first NodeJS Project. honestly I have no idea what I really spent the last week righting but it works somehow and it does what I needed it to do.
 
 It is extremely basic and the most difficult thing I have done is reference a MongoDB database that houses the blogs and pulls the IDs for the blogs.
